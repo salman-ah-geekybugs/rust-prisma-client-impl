@@ -11,8 +11,18 @@ datasource db {
 }
 
 model User {
-  id         String   @id @default(cuid())
+  id         String     @id @default(cuid())
   first_name String
   last_name  String
   created_at DateTime
+  property   Property[]
+}
+
+model Property {
+  id         String   @id @default(uuid())
+  name       String?
+  area       Float?
+  created_at DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id])
+  userId     String
 }

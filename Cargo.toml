@@ -2,7 +2,7 @@
 name = "prisma_rust"
 version = "0.1.0"
 edition = "2021"
-
+default-run = "prisma_rust"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 
@@ -13,3 +13,7 @@ prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust
 prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.5" }
 serde = "1.0.154"
 tokio = "1.26.0"
+
+[[bin]]
+name ="prisma_rust"
+default = true
