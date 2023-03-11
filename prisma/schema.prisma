@@ -1,0 +1,18 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "cargo run --bin prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:../dev.db"
+}
+
+model User {
+  id         String   @id @default(cuid())
+  first_name String
+  last_name  String
+  created_at DateTime
+}

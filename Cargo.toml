@@ -1,0 +1,15 @@
+[package]
+name = "prisma_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+chrono = "0.4.23"
+prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.5" }
+# prisma-client-rust-cli = { path ="prisma_cli"}
+prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.5" }
+serde = "1.0.154"
+tokio = "1.26.0"
