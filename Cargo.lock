@@ -2057,9 +2057,9 @@ dependencies = [
 
 [[package]]
 name = "mime"
-version = "0.3.16"
+version = "0.3.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d"
+checksum = "6877bb514081ee2a7ff5ef9de3281f14a4dd4bceac4c09388074a6b5df8a139a"
 
 [[package]]
 name = "minimal-lexical"
@@ -2843,6 +2843,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c6fa0831dd7cc608c38a5e323422a0077678fa5744aa2be4ad91c4ece8eec8d5"
 
 [[package]]
+name = "prisma-cli"
+version = "0.1.0"
+dependencies = [
+ "prisma-client-rust-cli",
+]
+
+[[package]]
 name = "prisma-client-rust"
 version = "0.6.5"
 source = "git+https://github.com/Brendonovich/prisma-client-rust?tag=0.6.5#3db4094ae70aa0aa7047da005d14c0a3ff48ec51"
@@ -2949,7 +2956,6 @@ version = "0.1.0"
 dependencies = [
  "chrono",
  "prisma-client-rust",
- "prisma-client-rust-cli",
  "serde",
  "tokio",
 ]
@@ -3386,9 +3392,9 @@ dependencies = [
 
 [[package]]
 name = "reqwest"
-version = "0.11.14"
+version = "0.11.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "21eed90ec8570952d53b772ecf8f206aa1ec9a3d76b2521c56c42973f2d91ee9"
+checksum = "0ba30cc2c0cd02af1222ed216ba659cdb2f879dfe3181852fe7c50b1d0005949"
 dependencies = [
  "base64 0.21.0",
  "bytes",
@@ -3771,9 +3777,9 @@ dependencies = [
 
 [[package]]
 name = "serde_path_to_error"
-version = "0.1.10"
+version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db0969fff533976baadd92e08b1d102c5a3d8a8049eadfd69d4d1e3c5b2ed189"
+checksum = "f7f05c1d5476066defcdfacce1f52fc3cae3af1d3089727100c02ae92e5abbe0"
 dependencies = [
  "serde",
 ]

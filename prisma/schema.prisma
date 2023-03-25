@@ -2,7 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "cargo run --bin prisma"
+  provider = "cargo prisma"
+  output   = "../src/prisma.rs"
 }
 
 datasource db {
